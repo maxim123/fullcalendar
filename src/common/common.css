@@ -691,11 +691,11 @@ a.fc-more:hover {
 .fc-state-default
 {
     background-image: none;
-    
-    &.fc-corner-left, &.fc-corner-right
-    {
-        border-radius: 2px;
-    }
+}
+
+.fc-state-default.fc-corner-left, .fc-state-default.fc-corner-right
+{
+    border-radius: 2px;
 }
 
 .fc-event
@@ -724,13 +724,13 @@ a.fc-more:hover {
 	text-align: center;
 	padding: 8px;
 	margin: 0;
-	
-	h2
-	{
-    	padding-top: 4px;
-    	font-size: 18px;
-    	font-weight: 300;
-    }
+}
+
+.fc-toolbar h2
+{
+	padding-top: 4px;
+	font-size: 18px;
+	font-weight: 300;
 }
 
 .fc-agenda-view .fc-widget-header thead .fc-widget-header
@@ -740,30 +740,27 @@ a.fc-more:hover {
 	vertical-align: middle;
 }
 
-.fc-slats
+.fc-slats td
 {
-    td
-    {
-    	height: 2em;
-    	font-weight: 300;
-	
-    	&.fc-time
-        {
-        	font-size: 0.85em;
-        	vertical-align: top;
-        }
-    }
+	height: 2em;
+	font-weight: 300;
+}
+
+.fc-slats td.fc-time
+{
+	font-size: 0.85em;
+	vertical-align: top;
 }
 
 a.fc-event
 {
     text-decoration: none !important;
     opacity: 0.85;
-    
-    &:hover
-    {
-        text-decoration: none !important;
-    }
+}
+
+a.fc-event:hover
+{
+    text-decoration: none !important;
 }
 
 .fc-time-grid-event .fc-bg {
